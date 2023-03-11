@@ -1,1 +1,1 @@
-# InternertComputing Static Website
+# Internet Computing Static Website
