@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#112240;
+        }
+
+        *{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+}
+#abc{
+  width:100%;
+  height:10vh;
+  background-image: url(img2.jpg);
+  background-size: cover;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: #0005;
+  line-height: 50px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+
+nav ul li:hover{
+  background-color:#088;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+.number{
+    color: #08fdd8;
+}
+
+
+
+#intro{
+    margin-left: 15em;
+    margin-top:10em;
+
+
+}
+
+.name1{
+    font-size: 15px;
+    color: #08fdd8;
+}
+
+.name2{
+    font-size: 60px;
+    color:#ccd6f6;
+}
+
+.name3{
+    color:#8892b0;
+    font-size: 60px;
+}
+
+.mypara{
+    color:#8892b0;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+
+.btn{
+    margin-top: 2rem;
+  
+}
+.contact-btn{
+    border: 1px solid #08fdd8;
+    color:#08fdd8;
+    background-color:#112240 ;
+    padding: 1rem 3rem;
+}
+#work{
+    margin-left: 15em;
+    margin-top: 10em;
+}
+.work1{
+    color:#ccd6f6;
+}
+
+#projects{
+    margin-bottom: 30px;
+}
+
+.grid { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            align-items: center;
+            
+        }
+
+        @media only screen and (max-width: 900px) and (min-width: 700px){
+            .grid { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.25em;
+            align-items: center;
+        }
+        }
+
+        @media screen and (max-width:700px) {
+            .grid { 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1.25em;
+            align-items: center;
+            border: #08fdd8;
+        }
+        
+        }
+           
+        .grid > article {
+        border: 2px solid #08fdd8;
+        border-radius: 1.25em;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        transform: perspective(1500px) rotateY(10deg);
+        transition: transform 1s ease 0s;
+        }
+        .grid > article:hover {
+        transform: perspective(3000px) rotateY(5deg);
+        }
+    
+        
+        .grid > article img {
+        max-width: 50%;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.25em;
+        }
+
+        .aligngrid{
+            margin-left: 25px;
+            margin-top: 30px;
+        }
+
+        .text{
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .head{
+            color: #ccd6f6;
+        }
+
+        .para{
+            color:#8892b0;
+        }
+
+        .btnnew{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #projects{
+    margin-left: 15em;
+    margin-top: 10em;
+}
+.project1{
+    color:#ccd6f6;
+}
+
+#aboutme{
+    margin-left: 15em;
+    margin-top: 10em;
+}
+.aboutme1{
+    color:#ccd6f6;
+}
+
+.grid2 { 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1.25em;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        @media only screen and (max-width: 900px) and (min-width: 700px){
+            .grid2 { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.25em;
+            align-items: center;
+        }
+        }
+
+        @media screen and (max-width:700px) {
+            .grid2 { 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1.25em;
+            align-items: center;
+        }
+        
+        }
+           
+        .grid2 > article {
+        border: 2px solid #08fdd8;
+        border-radius: 1.25em;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        }
+      
+    
+        
+        .grid2 > article img {
+        max-width: 75%;
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.25em;
+        }
+
+        .cv{
+            height: 230px;
+        }
+
+        #contact{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .getintouch{
+            margin-top: 50px;;
+        }
+
+        .git{
+            margin-bottom: 20px;
+        }
+
+        .hello{
+            margin-bottom: 30px;
+        }
+
+        .anchors{
+            text-decoration: none;
+           color:#08fdd8 !important
+        }
+
+        /* .heading1{
+            text-align: center;
+        } */
+
+
+
+    </style>
+</head>
+<body>
+    <div id="abc">
+        <nav>
+            <ul>
+                <li><a href="#aboutme"><span class="number">01.</span> About</a></li>
+                <li><a href="#work"><span class="number">02.</span> Work</a></li>
+                <li><a href="#projects"><span class="number">03.</span> Projects</a></li>
+                <li><a href="#contact"><span class="number">04.</span> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="aboutme">
+        <div class="heading1">
+            <h1 class="aboutme1"><span class="number">01.</span>About Myself.</h1>
+        </div>
+    </section>
+    <section id="intro">
+        <div class="myheading">
+            <h1 class="name1">Hi, my name is</h1>
+            <h1 class="name2"><span class="number">S</span>ujan Siddarth,</h1>
+            <h1 class="name3">I bulid things for the Web.</h1>
+        </div>
+        <div class="mypara">
+            <p>I create successful responsive websites that are fast, easy to use, <br> and built with best practices. The main area of my expertise is front-end development,<br> HTML, CSS, JS, building small and medium web apps, and animations.</p>
+        </div>
+        <div class="btn">
+            <button class="contact-btn" href="#contact">Contact me!</button>
+        </div>
+    </section>
+
+    <section id="work">
+        <div>
+            <h1 class="work1"><span class="number">02.</span> Where I have Worked.</h1>
+
+        </div>
+    </section>
+    <div class="aligngrid">
+    <main  class="grid">
+        <article>
+            <div class="text">
+                <h3 class="head">Digi Air Technology and Analytics Pvt Ltd (2021-2022)</h3>
+                <p class="para">Junior Developer</p>
+                <div class="btnnew">
+                    <button class="contact-btn">LinkedIn</button>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="text">
+                <h3 class="head">Starminds Solutins Pvt Ltd (2020-2021)</h3>
+                <p class="para">Junior Developer</p>
+                <div class="btnnew">
+                    <button class="contact-btn">LinkedIn</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <section id="projects">
+        <div>
+            <h1 class="project1"><span class="number">03.</span>Some things I've built.</h1>
+        </div>
+    </section>
+    <main  class="grid2">
+        <article>
+            <img src="/Hapebeast.png" alt="Sample photo">
+            <div class="text">
+                <h3 class="aboutme1">NFT Project</h3>
+                <div class="btn git">
+                    <button class="contact-btn"><a class="anchors" href="https://github.com/sujansiddarth/NFT-Project">Github</a></button>
+                </div>
+            </div>
+        </article>
+        <article>
+            <img class="cv" src="/Computer Vision.png" alt="Sample photo">
+            <div class="text">
+                <h3 class="aboutme1">Pneumonia Detection Project</h3>
+                <div class="btn git">
+                    <button class="contact-btn">Github</button>
+                </div>
+            </div>
+        </article>
+        <article>
+            <img src="/Amazon.png" alt="Sample photo">
+            <div class="text">
+                <h3 class="aboutme1">Amazon Recomendation System Project</h3>
+                <div class="btn git">
+                    <button class="contact-btn">Github</button>
+                </div>
+                
+            </div>
+        </article>
+    </main>
+    <section id="contact">
+        <div>
+            <h1 class="number"><span class="number">04.</span> What's Next.</h1>
+        </div>
+        <div>
+            <h1 class="aboutme1 getintouch">Get In Touch</h1>
+            <p class="para mypara">"Thank you for taking the time to view my portfolio! <br>If you have any questions about my work or would like to discuss a potential project, <br>please feel free to get in touch using the contact form below. <br>I look forward to hearing from you!"</p>
+            <div class="btn hello">
+                <button class="contact-btn">Say Hello!!!</button>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
